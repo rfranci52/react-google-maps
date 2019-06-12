@@ -2,6 +2,7 @@ import React, {Component} from "react"
 import GoogleMapLoader from "react-google-maps-loader"
 import GooglePlacesSuggest from "react-google-places-suggest"
  
+
 const MY_API_KEY = "AIzaSyBliDy-LD-7I7MHWZtGY_sZEBZ9EHjlWt8" 
  
 export default class GoogleSuggest extends React.Component {

@@ -1,0 +1,611 @@
+[{
+    "id": "Hw5Y5y2PFQhunqTC55vnGg",
+    "alias": "more-life-cafe-vegan-jersey-city",
+    "name": "More Life Cafe Vegan",
+   "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/K0XJAzVWVweOP84zk5lGbg/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/more-life-cafe-vegan-jersey-city?adjust_creative=FvJgyxUH7IgoVpy-gGGo9Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FvJgyxUH7IgoVpy-gGGo9Q",
+    "review_count": 39,
+    "categories": [
+    { "alias": "buffets", "title": "Buffets" },
+    { "alias": "vegan", "title": "Vegan" },
+    { "alias": "icecream", "title": "Ice Cream & Frozen Yogurt" }
+    ],
+    "rating": 4.5,
+    "coordinates": { "latitude": 40.7209165821707, "longitude": -74.0870564611999 },
+    "transactions": [],
+    "price": "$$",
+    "location": {
+      "address1": "191 Mallory Ave",
+      "address2": "",
+      "address3": null,
+      "city": "Jersey city",
+      "zip_code": "07304",
+      "country": "US",
+      "state": "NJ",
+      "display_address": [ "191 Mallory Ave", "Jersey city, NJ 07304" ]
+    },
+    "phone": "+12019850001",
+    "display_phone": "(201) 985-0001",
+    "distance": 2399.8840590580353
+  }
+  ,{
+    "id": "88zRCZWAXKMZwBTCt-S69w",
+    "alias": "quality-greens-kitchen-hoboken",
+    "name": "Quality Greens Kitchen",
+   "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/6c5ddgtaHixadHkub2naVQ/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/quality-greens-kitchen-hoboken?adjust_creative=FvJgyxUH7IgoVpy-gGGo9Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FvJgyxUH7IgoVpy-gGGo9Q",
+    "review_count": 121,
+    "categories": [
+    { "alias": "newamerican", "title": "American (New)" },
+      { "alias": "salad", "title": "Salad" },
+      { "alias": "gluten_free", "title": "Gluten-Free" }
+    ],
+    "rating": 4,
+    "coordinates": { "latitude": 40.739508, "longitude": -74.029947 },
+    "transactions": [ "delivery" ],
+    "price": "$$",
+    "location": {
+      "address1": "227 Washington St",
+      "address2": "",
+      "address3": "",
+      "city": "Hoboken",
+      "zip_code": "07030",
+      "country": "US",
+      "state": "NJ",
+      "display_address": [ "227 Washington St", "Hoboken, NJ 07030" ]
+    },
+    "phone": "+12016594361",
+    "display_phone": "(201) 659-4361",
+    "distance": 2885.1766295409197
+  }
+  ,{
+    "id": "MJdXbMiBRlOlstOvYj859g",
+    "alias": "whos-gluten-free-jersey-city",
+    "name": "Whos Gluten Free",
+   "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/SkR3zGnetBPfCnlnhcVpNA/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/whos-gluten-free-jersey-city?adjust_creative=FvJgyxUH7IgoVpy-gGGo9Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FvJgyxUH7IgoVpy-gGGo9Q",
+    "review_count": 35,
+    "categories": [
+      { "alias": "bakeries", "title": "Bakeries" },
+      { "alias": "gluten_free", "title": "Gluten-Free" }
+    ],
+    "rating": 4.5,
+    "coordinates": { "latitude": 40.71675, "longitude": -74.09032 },
+    "transactions": [],
+    "price": "$$",
+    "location": {
+      "address1": "80 Mallory Ave",
+      "address2": "",
+      "address3": "",
+      "city": "Jersey city",
+      "zip_code": "07304",
+      "country": "US",
+      "state": "NJ",
+      "display_address": [ "80 Mallory Ave", "Jersey city, NJ 07304" ]
+    },
+    "phone": "+12016541266",
+    "display_phone": "(201) 654-1266",
+    "distance": 2817.221266491184
+  }
+  ,{
+    "id": "yH49flYj7qk9JOX124uhFg",
+    "alias": "mthr-vegan-new-york-2",
+    "name": "MTHR Vegan",
+   "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/7NOnN1MqUeJMxdEvnTiMMw/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/mthr-vegan-new-york-2?adjust_creative=FvJgyxUH7IgoVpy-gGGo9Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FvJgyxUH7IgoVpy-gGGo9Q",
+    "review_count": 45,
+    "categories": [ { "alias": "vegan", "title": "Vegan" } ],
+    "rating": 5,
+    "coordinates": { "latitude": 40.76241, "longitude": -73.98806 },
+    "transactions": [ "delivery", "pickup" ],
+    "location": {
+      "address1": "329 W 49th St",
+      "address2": null,
+      "address3": "",
+      "city": "New York",
+      "zip_code": "10019",
+      "country": "US",
+      "state": "NY",
+      "display_address": [ "329 W 49th St", "New York, NY 10019" ]
+    },
+    "phone": "+12127578600",
+    "display_phone": "(212) 757-8600",
+    "distance": 7239.401433423248
+  }
+  ,{
+    "id": "kyBY1Y8wVeBskR5DBKXq2g",
+    "alias": "b-good-jersey-city-2",
+    "name": "B.GOOD",
+   "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/UaGj0_IRJF0Bmy9chp30rQ/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/b-good-jersey-city-2?adjust_creative=FvJgyxUH7IgoVpy-gGGo9Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FvJgyxUH7IgoVpy-gGGo9Q",
+    "review_count": 125,
+    "categories": [
+      { "alias": "juicebars", "title": "Juice Bars & Smoothies" },
+      { "alias": "salad", "title": "Salad" },
+      { "alias": "newamerican", "title": "American (New)" }
+    ],
+    "rating": 3.5,
+    "coordinates": { "latitude": 40.726768, "longitude": -74.035364 },
+    "transactions": [ "delivery", "pickup" ],
+    "price": "$$",
+    "location": {
+      "address1": "525 Washington Blvd",
+      "address2": "",
+      "address3": null,
+      "city": "Jersey city",
+      "zip_code": "07310",
+      "country": "US",
+      "state": "NJ",
+      "display_address": [ "525 Washington Blvd", "Jersey city, NJ 07310" ]
+    },
+    "phone": "+12013600156",
+    "display_phone": "(201) 360-0156",
+    "distance": 2036.2722517236305
+  }
+  ,{
+    "id": "CBktuFhY2K5IB3WHOZaeNw",
+    "alias": "house-of-flavor-bayonne",
+    "name": "House Of Flavor",
+   "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/6Bk5zTs3kr6VuemKbe0atA/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/house-of-flavor-bayonne?adjust_creative=FvJgyxUH7IgoVpy-gGGo9Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FvJgyxUH7IgoVpy-gGGo9Q",
+    "review_count": 65,
+    "categories": [
+      { "alias": "vegan", "title": "Vegan" },
+      { "alias": "cafes", "title": "Cafes" },
+      { "alias": "juicebars", "title": "Juice Bars & Smoothies" }
+    ],
+    "rating": 4.5,
+    "coordinates": { "latitude": 40.67884, "longitude": -74.1060399 },
+    "transactions": [],
+    "price": "$$",
+    "location": {
+      "address1": "911 Broadway",
+      "address2": null,
+      "address3": "",
+      "city": "Bayonne",
+      "zip_code": "07002",
+      "country": "US",
+      "state": "NJ",
+      "display_address": [ "911 Broadway", "Bayonne, NJ 07002" ]
+    },
+    "phone": "+12018584200",
+    "display_phone": "(201) 858-4200",
+    "distance": 6584.677434888937
+  }
+  ,{
+    "id": "B-lbpKcK1sVfqGdlmagKag",
+    "alias": "subias-organic-market-jersey-city-2",
+    "name": "Subias Organic Market",
+   "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/7Blz8OuOPWVehmyIsO4I8Q/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/subias-organic-market-jersey-city-2?adjust_creative=FvJgyxUH7IgoVpy-gGGo9Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FvJgyxUH7IgoVpy-gGGo9Q",
+    "review_count": 171,
+    "categories": [
+    { "alias": "vegan", "title": "Vegan" },
+    { "alias": "newamerican", "title": "American (New)" },
+    { "alias": "cafes", "title": "Cafes" }
+    ],
+    "rating": 3.5,
+    "coordinates": { "latitude": 40.7196564227343, "longitude": -74.0471468120813 },
+    "transactions": [ "delivery", "pickup" ],
+    "price": "$$",
+    "location": {
+      "address1": "506 Jersey Ave",
+      "address2": "",
+      "address3": "",
+      "city": "Jersey city",
+      "zip_code": "07302",
+      "country": "US",
+      "state": "NJ",
+      "display_address": [ "506 Jersey Ave", "Jersey city, NJ 07302" ]
+    },
+    "phone": "+12014327639",
+    "display_phone": "(201) 432-7639",
+    "distance": 1275.421772022555
+  }
+  ,{
+    "id": "djQCSwY5ElZYxFqTZYoDww",
+    "alias": "alfalfa-hoboken",
+    "name": "Alfalfa",
+   "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/mHKtmDCDujxGqkgn9DmRmQ/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/alfalfa-hoboken?adjust_creative=FvJgyxUH7IgoVpy-gGGo9Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FvJgyxUH7IgoVpy-gGGo9Q",
+    "review_count": 47,
+    "categories": [
+    { "alias": "salad", "title": "Salad" },
+    { "alias": "coffee", "title": "Coffee & Tea" },
+    { "alias": "donuts", "title": "Donuts" }
+    ],
+    "rating": 5,
+    "coordinates": { "latitude": 40.75048, "longitude": -74.02725 },
+    "transactions": [ "delivery", "pickup" ],
+    "location": {
+      "address1": "1110 Washington St",
+      "address2": null,
+      "address3": "",
+      "city": "Hoboken",
+      "zip_code": "07030",
+      "country": "US",
+      "state": "NJ",
+      "display_address": [ "1110 Washington St", "Hoboken, NJ 07030" ]
+    },
+    "phone": "+12017900491",
+    "display_phone": "(201) 790-0491",
+    "distance": 3816.014459651335
+  }
+  ,{
+    "id": "iE6kR5wsCbldJHKZ5kGLcw",
+    "alias": "greektown-hoboken-3",
+    "name": "Greektown",
+   "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/00SgEKJqUX6Fi0YTPdDxOQ/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/greektown-hoboken-3?adjust_creative=FvJgyxUH7IgoVpy-gGGo9Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FvJgyxUH7IgoVpy-gGGo9Q",
+    "review_count": 137,
+    "categories": [
+    { "alias": "greek", "title": "Greek" },
+    { "alias": "salad", "title": "Salad" }
+    ],
+    "rating": 4,
+    "coordinates": { "latitude": 40.7373679, "longitude": -74.0329029529499 },
+    "transactions": [ "delivery", "pickup" ],
+    "price": "$$",
+    "location": {
+      "address1": "86 Garden St",
+      "address2": "",
+      "address3": "",
+      "city": "Hoboken",
+      "zip_code": "07030",
+      "country": "US",
+      "state": "NJ",
+      "display_address": [ "86 Garden St", "Hoboken, NJ 07030" ]
+    },
+    "phone": "+12012223031",
+    "display_phone": "(201) 222-3031",
+    "distance": 2551.4230589384733
+  }
+  ,{
+    "id": "uwx3yy7Wu5u55EiXRv03aQ",
+    "alias": "ali-baba-hoboken-2",
+    "name": "Ali Baba",
+   "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/un_U3NGBJwvymuVyP9Vj0Q/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/ali-baba-hoboken-2?adjust_creative=FvJgyxUH7IgoVpy-gGGo9Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FvJgyxUH7IgoVpy-gGGo9Q",
+    "review_count": 243,
+    "categories": [
+    { "alias": "mediterranean", "title": "Mediterranean" },
+    { "alias": "mideastern", "title": "Middle Eastern" },
+    { "alias": "vegetarian", "title": "Vegetarian" }
+    ],
+    "rating": 4,
+    "coordinates": { "latitude": 40.74775, "longitude": -74.02808 },
+    "transactions": [ "delivery", "pickup" ],
+    "price": "$$",
+    "location": {
+      "address1": "912 Washington St",
+      "address2": "",
+      "address3": "",
+      "city": "Hoboken",
+      "zip_code": "07030",
+      "country": "US",
+      "state": "NJ",
+      "display_address": [ "912 Washington St", "Hoboken, NJ 07030" ]
+    },
+    "phone": "+12016535319",
+    "display_phone": "(201) 653-5319",
+    "distance": 3557.504907723945
+  }
+  ,{
+    "id": "CuzebMZlGyC1-2Uf-nEiVA",
+    "alias": "blueprint-cafe-lounge-newark",
+    "name": "Blueprint Cafe Lounge",
+   "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/EeVSrqB-wgYWQOMFfQzS-A/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/blueprint-cafe-lounge-newark?adjust_creative=FvJgyxUH7IgoVpy-gGGo9Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FvJgyxUH7IgoVpy-gGGo9Q",
+    "review_count": 57,
+    "categories": [
+    { "alias": "cafes", "title": "Cafes" },
+    { "alias": "coffee", "title": "Coffee & Tea" },
+    { "alias": "vegan", "title": "Vegan" }
+    ],
+    "rating": 4.5,
+    "coordinates": { "latitude": 40.7342871794987, "longitude": -74.1347641466091 },
+    "transactions": [],
+    "price": "$$",
+    "location": {
+      "address1": "369 Raymond Blvd",
+      "address2": "",
+      "address3": null,
+      "city": "Newark",
+      "zip_code": "07105",
+      "country": "US",
+      "state": "NJ",
+      "display_address": [ "369 Raymond Blvd", "Newark, NJ 07105" ]
+    },
+    "phone": "+19737320421",
+    "display_phone": "(973) 732-0421",
+    "distance": 6399.703917530841
+  }
+  ,{
+    "id": "zXiPZpz6G9LiRkb5vgphMw",
+    "alias": "green-pear-cafe-hoboken",
+    "name": "Green Pear Cafe",
+   "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/J4kKoahGEn_tYJFXXzmrPQ/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/green-pear-cafe-hoboken?adjust_creative=FvJgyxUH7IgoVpy-gGGo9Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FvJgyxUH7IgoVpy-gGGo9Q",
+    "review_count": 113,
+    "categories": [
+    { "alias": "breakfast_brunch", "title": "Breakfast & Brunch" },
+    { "alias": "gluten_free", "title": "Gluten-Free" },
+    { "alias": "modern_european", "title": "Modern European" }
+    ],
+    "rating": 4.5,
+    "coordinates": { "latitude": 40.7381444779813, "longitude": -74.0363041705471 },
+    "transactions": [ "delivery", "pickup" ],
+    "price": "$$",
+    "location": {
+      "address1": "93 Grand St",
+      "address2": "",
+      "address3": "",
+      "city": "Hoboken",
+      "zip_code": "07030",
+      "country": "US",
+      "state": "NJ",
+      "display_address": [ "93 Grand St", "Hoboken, NJ 07030" ]
+    },
+    "phone": "+12016590940",
+    "display_phone": "(201) 659-0940",
+    "distance": 2350.2252219580528
+  }
+  ,{
+    "id": "CcncHLot-nt8qECbw3SNsg",
+    "alias": "andrews-healthy-foods-bayonne-2",
+    "name": "Andrews Healthy Foods",
+   "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/sM5vLcwwNIX834s02mnzDQ/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/andrews-healthy-foods-bayonne-2?adjust_creative=FvJgyxUH7IgoVpy-gGGo9Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FvJgyxUH7IgoVpy-gGGo9Q",
+    "review_count": 144,
+    "categories": [
+    { "alias": "gluten_free", "title": "Gluten-Free" },
+    { "alias": "vegan", "title": "Vegan" },
+    { "alias": "juicebars", "title": "Juice Bars & Smoothies" }
+    ],
+    "rating": 4,
+    "coordinates": { "latitude": 40.672423, "longitude": -74.1113671 },
+    "transactions": [],
+    "price": "$$",
+    "location": {
+      "address1": "737 Broadway",
+      "address2": "",
+      "address3": "",
+      "city": "Bayonne",
+      "zip_code": "07002",
+      "country": "US",
+      "state": "NJ",
+      "display_address": [ "737 Broadway", "Bayonne, NJ 07002" ]
+    },
+    "phone": "+12013390033",
+    "display_phone": "(201) 339-0033",
+    "distance": 7427.627821131212
+  }
+  ,{
+    "id": "d85rC8v82Tul_TEVefnRPg",
+    "alias": "sweetberry-jersey-city-newport-tower-jersey-city",
+    "name": "Sweetberry - Jerseycity - Newport Tower",
+   "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/BLaTY5BGMOa2jwALEUZEoA/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/sweetberry-jersey-city-newport-tower-jersey-city?adjust_creative=FvJgyxUH7IgoVpy-gGGo9Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FvJgyxUH7IgoVpy-gGGo9Q",
+    "review_count": 13,
+    "categories": [
+    { "alias": "acaibowls", "title": "Acai Bowls" },
+    { "alias": "salad", "title": "Salad" },
+    { "alias": "wraps", "title": "Wraps" }
+    ],
+    "rating": 4.5,
+    "coordinates": { "latitude": 40.726956, "longitude": -74.035595 },
+    "transactions": [ "delivery", "pickup" ],
+    "location": {
+      "address1": "525 Washington Blvd",
+      "address2": "Ste E",
+      "address3": null,
+      "city": "Jersey city",
+      "zip_code": "07310",
+      "country": "US",
+      "state": "NJ",
+      "display_address": [ "525 Washington Blvd", "Ste E", "Jersey city, NJ 07310" ]
+    },
+    "phone": "+12016857001",
+    "display_phone": "(201) 685-7001",
+    "distance": 2017.2999407517502
+  }
+  ,{
+    "id": "rO4-ytxRRN98GMk2gSXxjQ",
+    "alias": "honeygrow-hoboken",
+    "name": "honeygrow",
+   "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/qc2OBKrA7aFgscNBZO4X8A/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/honeygrow-hoboken?adjust_creative=FvJgyxUH7IgoVpy-gGGo9Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FvJgyxUH7IgoVpy-gGGo9Q",
+    "review_count": 270,
+    "categories": [
+    { "alias": "salad", "title": "Salad" },
+    { "alias": "vegetarian", "title": "Vegetarian" },
+    { "alias": "noodles", "title": "Noodles" }
+    ],
+    "rating": 3.5,
+    "coordinates": { "latitude": 40.73829, "longitude": -74.03098 },
+    "transactions": [ "delivery", "pickup" ],
+    "price": "$$",
+    "location": {
+      "address1": "120 Washington St",
+      "address2": null,
+      "address3": "",
+      "city": "Hoboken",
+      "zip_code": "07030",
+      "country": "US",
+      "state": "NJ",
+      "display_address": [ "120 Washington St", "Hoboken, NJ 07030" ]
+    },
+    "phone": "+12015338089",
+    "display_phone": "(201) 533-8089",
+    "distance": 2746.0752393183375
+  }
+  ,{
+    "id": "elLwg1PVFUEnoyKpzMP8DQ",
+    "alias": "bali-kitchen-new-york-2",
+    "name": "Bali Kitchen",
+   "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/E6uUKHegGd7qtL6WlxrT8A/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/bali-kitchen-new-york-2?adjust_creative=FvJgyxUH7IgoVpy-gGGo9Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FvJgyxUH7IgoVpy-gGGo9Q",
+    "review_count": 108,
+    "categories": [
+    { "alias": "indonesian", "title": "Indonesian" },
+    { "alias": "vegan", "title": "Vegan" },
+    { "alias": "vegetarian", "title": "Vegetarian" }
+    ],
+    "rating": 4.5,
+    "coordinates": { "latitude": 40.725371, "longitude": -73.987617 },
+    "transactions": [ "delivery", "pickup" ],
+    "price": "$$",
+    "location": {
+      "address1": "128 E 4th St",
+      "address2": "",
+      "address3": null,
+      "city": "New York",
+      "zip_code": "10003",
+      "country": "US",
+      "state": "NY",
+      "display_address": [ "128 E 4th St", "New York, NY 10003" ]
+    },
+    "phone": "+16466784784",
+    "display_phone": "(646) 678-4784",
+    "distance": 6060.643653651882
+  }
+  ,{
+    "id": "XipQLDbyTl5tsLlyzAWzug",
+    "alias": "jajaja-new-york",
+    "name": "Jajaja",
+   "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/QaIhCEp1FpU3a2teWQh6mA/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/jajaja-new-york?adjust_creative=FvJgyxUH7IgoVpy-gGGo9Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FvJgyxUH7IgoVpy-gGGo9Q",
+    "review_count": 695,
+    "categories": [
+    { "alias": "mexican", "title": "Mexican" },
+    { "alias": "vegan", "title": "Vegan" },
+    { "alias": "bars", "title": "Bars" }
+    ],
+    "rating": 4.5,
+    "coordinates": { "latitude": 40.7141530317142, "longitude": -73.9904247969389 },
+    "transactions": [ "delivery", "restaurant_reservation", "pickup" ],
+    "price": "$$",
+    "location": {
+      "address1": "162 E Broadway",
+      "address2": "",
+      "address3": null,
+      "city": "New York",
+      "zip_code": "10002",
+      "country": "US",
+      "state": "NY",
+      "display_address": [ "162 E Broadway", "New York, NY 10002" ]
+    },
+    "phone": "+16468835453",
+    "display_phone": "(646) 883-5453",
+    "distance": 5981.352240831559
+  }
+  ,{
+    "id": "wfJCzfotoMELb74z4lITOA",
+    "alias": "pet-shop-jersey-city-3",
+    "name": "Pet Shop",
+   "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/2o5LQsqVcSNxlBuNfariSA/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/pet-shop-jersey-city-3?adjust_creative=FvJgyxUH7IgoVpy-gGGo9Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FvJgyxUH7IgoVpy-gGGo9Q",
+    "review_count": 205,
+    "categories": [
+    { "alias": "bars", "title": "Bars" },
+    { "alias": "vegetarian", "title": "Vegetarian" },
+    { "alias": "vegan", "title": "Vegan" }
+    ],
+    "rating": 4,
+    "coordinates": { "latitude": 40.72123, "longitude": -74.04592 },
+    "transactions": [],
+    "price": "$$",
+    "location": {
+      "address1": "193 Newark Ave",
+      "address2": null,
+      "address3": "",
+      "city": "Jersey city",
+      "zip_code": "07302",
+      "country": "US",
+      "state": "NJ",
+      "display_address": [ "193 Newark Ave", "Jersey city, NJ 07302" ]
+    },
+    "phone": "+12019842170",
+    "display_phone": "(201) 984-2170",
+    "distance": 1280.9299311748116
+  }
+  ,{
+    "id": "PjesVIPZzmWw_eJK3alCPg",
+    "alias": "sweetberry-jersey-city-downtown-jersey-city-3",
+    "name": "Sweetberry - Jersey city Downtown",
+   "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/oztbxtfiSPXdrZ6yJsVgGw/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/sweetberry-jersey-city-downtown-jersey-city-3?adjust_creative=FvJgyxUH7IgoVpy-gGGo9Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FvJgyxUH7IgoVpy-gGGo9Q",
+    "review_count": 73,
+    "categories": [
+    { "alias": "acaibowls", "title": "Acai Bowls" },
+    { "alias": "salad", "title": "Salad" },
+    { "alias": "wraps", "title": "Wraps" }
+    ],
+    "rating": 4,
+    "coordinates": { "latitude": 40.72085, "longitude": -74.04571 },
+    "transactions": [ "delivery", "pickup" ],
+    "price": "$",
+    "location": {
+      "address1": "179 Newark Ave",
+      "address2": null,
+      "address3": "",
+      "city": "Jersey city",
+      "zip_code": "07302",
+      "country": "US",
+      "state": "NJ",
+      "display_address": [ "179 Newark Ave", "Jersey city, NJ 07302" ]
+    },
+    "phone": "+15512253015",
+    "display_phone": "(551) 225-3015",
+    "distance": 1321.3396623869382
+  }
+  ,{
+    "id": "83BvAmplqhRpLJQeX1L5nA",
+    "alias": "bluestone-lane-hoboken",
+    "name": "Bluestone Lane",
+   "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/PeoJI1I6t6Mw8_Fi7xP6TA/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/bluestone-lane-hoboken?adjust_creative=FvJgyxUH7IgoVpy-gGGo9Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FvJgyxUH7IgoVpy-gGGo9Q",
+    "review_count": 139,
+    "categories": [
+    { "alias": "coffee", "title": "Coffee & Tea" },
+    { "alias": "gluten_free", "title": "Gluten-Free" },
+    { "alias": "breakfast_brunch", "title": "Breakfast & Brunch" }
+    ],
+    "rating": 4,
+    "coordinates": { "latitude": 40.7416010355079, "longitude": -74.0294096573144 },
+    "transactions": [],
+    "price": "$$",
+    "location": {
+      "address1": "409 Washington St",
+      "address2": null,
+      "address3": null,
+      "city": "Hoboken",
+      "zip_code": "07030",
+      "country": "US",
+      "state": "NJ",
+      "display_address": [ "409 Washington St", "Hoboken, NJ 07030" ]
+    },
+    "phone": "+17183746858",
+    "display_phone": "(718) 374-6858",
+    "distance": 3046.7351069022975
+  }]
