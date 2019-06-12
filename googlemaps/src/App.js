@@ -5,6 +5,9 @@ import SearchBox from "react-google-maps/lib/components/places/SearchBox";
 import { compose, withProps, lifecycle } from "recompose";
 import  healthyrestaurants from "./coords2.json"
 
+import Button from 'react-bootstrap/Button';
+
+
 console.log(healthyrestaurants[0].coordinates.latitude)
 
 
@@ -69,8 +72,10 @@ function Map(){
           }}
         >
           <div>
-            <h2>{selectedPark.name}</h2>
-            <p>{selectedPark.url}</p>
+            {/* <h2>{selectedPark.name}</h2> */}
+            <Button variant="outline-success"rel="noreferrer noopener" target="_blank" href={selectedPark.url} >{selectedPark.name}</Button>
+
+            {/* <p>{selectedPark.url}</p> */}
           </div>
         </InfoWindow>
       )}
