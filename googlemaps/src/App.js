@@ -6,6 +6,8 @@ import { compose, withProps, lifecycle } from "recompose";
 import  healthyrestaurants from "./coords2.json"
 
 import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+
 
 
 console.log(healthyrestaurants[0].coordinates.latitude)
@@ -71,12 +73,14 @@ function Map(){
             lng: selectedPark.coordinates.longitude
           }}
         >
-          <div>
+                 <Card style={{ width: '6rem' }}>
+                 <Card.Img variant="top"  src={selectedPark.image_url} style={{ width: '50%' }} />               
+
             {/* <h2>{selectedPark.name}</h2> */}
             <Button variant="outline-success"rel="noreferrer noopener" target="_blank" href={selectedPark.url} >{selectedPark.name}</Button>
 
             {/* <p>{selectedPark.url}</p> */}
-          </div>
+            </Card>
         </InfoWindow>
       )}
     </GoogleMap>
