@@ -1,119 +1,200 @@
-import React, { useState, useEffect } from 'react';
-import {GoogleMap, withScriptjs,withGoogleMap,Marker, InfoWindow} from "react-google-maps"
-import SearchBox from "react-google-maps/lib/components/places/SearchBox";
-
-import { compose, withProps, lifecycle } from "recompose";
-import  healthyrestaurants from "./coords2.json"
-
+import React, { Component, Fragment } from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import {
+    withScriptjs,
+    withGoogleMap,
+    GoogleMap,
+    Marker,InfoWindow
+} from "react-google-maps";
+
+var yelp_params= "10455"
+// sets default markers by passing yelp_params into the yelp api query string
+
+function mainFunction(callback) {
+     
+        const axios =require ("axios")
+       var str= axios
+         .get(
+           `${"https://cors-anywhere.herokuapp.com/"}https://api.yelp.com/v3/businesses/search?&location=`+yelp_params,
+           {
+             headers: {
+               Authorization: `Bearer ` + process.env.REACT_APP_YELP_KEY
+             }
+             ,
+             params: {
+               categories: "healthmarkets",
+             }
+           }
+         )
+         .then( res => {
+            callback(res.data)
+            return (res.data.businesses[0].id)
+            
+         })
+         .catch(err => {
+           console.log(err);
+         })
+
+          }
+         
+class Map extends Component{
+ 
+  state = {
+    stores:[],
+    title:yelp_params,
+    openInfoWindowMarkerId: ''
+  };
 
 
-
-console.log(healthyrestaurants[0].coordinates.latitude)
-
-
-
-
-
-
-
-
-
-function Map(){
-
-  const [selectedPark, setSelectedPark] = useState(null);
-
-  useEffect(() => {
-    const listener = e => {
-      if (e.key === "Escape") {
-        setSelectedPark(null);
-      }
-    };
-    window.addEventListener("keydown", listener);
-
-    return () => {
-      window.removeEventListener("keydown", listener);
-    };
-  }, []);
-
+  componentDidMount() {
+    mainFunction((yelp)=>{console.log(yelp.businesses[0].coordinates);
+    this.setState({
+      stores: yelp.businesses,
+      title:yelp_params
+    });
   
-  return(
-    
-    
-    <div>
-     <GoogleMap
-       defaultZoom={12}
-       defaultCenter={{lat:40.712776, lng:-74.005974}}
-    >
-      {healthyrestaurants.map(restuarant => (
-        <Marker
-          key={restuarant.id}
-          position={{
-            lat: restuarant.coordinates.latitude,
-            lng: restuarant.coordinates.longitude
-          }}
-          onClick={() => {
-            setSelectedPark(restuarant);
-          }}
-          // icon={{
-          //   url: `/skateboarding.svg`,
-          //   scaledSize: new window.google.maps.Size(25, 25)
-          // }}
-        />
-      ))}
+  
+  })
+  }
 
-      {selectedPark && (
-        <InfoWindow
-          onCloseClick={() => {
-            setSelectedPark(null);
-          }}
+  handleInputChange = event => {
+    event.cancelable=false;
+    event.persist()
+    event.preventDefault();
+    console.log(event.target.value)
+    mainFunction((yelp)=>{
+    this.setState({
+      stores: yelp.businesses,
+      title: event.target.value,
+    });
+  
+  })
+ 
+  };
+  handleFormSubmit = event => {
+    // Preventing the default behavior of the form submit (which is to refresh the page)
+    event.preventDefault();
+
+    yelp_params=this.state.title
+    mainFunction((yelp)=>{
+      // Updating the input's state
+      yelp_params=this.state.title
+      this.setState({
+        stores: yelp.businesses,
+        title: yelp_params
+      });
+    
+    })
+  };
+
+    static defaultProps = {
+        googleMapURL: "https://maps.googleapis.com/maps/api/js?key="+ process.env.REACT_APP_GOOGLE_KEY+ "&v=3.exp&libraries=geometry,drawing,places",
+    }
+
+    constructor(props) {
+        super(props);
+        mainFunction((yelp)=>{
+          console.log(yelp.businesses)
+
+        this.state = {
+          stores: yelp.businesses,
+        title: yelp_params,
+      }
+    })
+    }
+    
+    handleToggleOpen = (markerId) => {
+      this.setState({
+        openInfoWindowMarkerId: markerId
+      });
+  }
+
+  handleToggleClose = () => {
+      this.setState({
+        openInfoWindowMarkerId:""
+      });
+  }
+
+
+    CMap = withScriptjs(withGoogleMap(props =>
+      
+        <GoogleMap
+          defaultZoom={10}
+          defaultCenter={{ lat:40.7799404643263, lng: -73.980282552649}}
+        >
+            {props.children}
+             
+        </GoogleMap>
+      ));
+
+    render() {
+        return (
+          
+
+<div>
+<form >
+  <label>
+    Enter a Location:
+    <input type="text" name="name"   
+        // line below takes away my ability to change the input
+    //  value={this.state.title}           
+  onChange={this.handleInputChange}
+/>
+<button onClick={this.handleFormSubmit} >Submit</button>
+
+  </label>
+</form>
+          
+            <Fragment>
+                <this.CMap
+                  googleMapURL={this.props.googleMapURL}
+                    
+                    loadingElement={<div style={{ height: `100%` }} />}
+                    containerElement={<div style={{width:"40vw", height:"80vh"}} />}
+                    mapElement={<div style={{ height: `100%` }} />}
+                    center= {{ lat: 25.03, lng: 121.6 }} 
+                >
+
+                   {this.state.stores.map((restaurant,i) => (
+        <Marker
+                    
+          key={i}
           position={{
-            lat: selectedPark.coordinates.latitude,
-            lng: selectedPark.coordinates.longitude
+            lat: restaurant.coordinates.latitude,
+            lng: restaurant.coordinates.longitude
+          }}
+          
+          onClick={() => this.handleToggleOpen(i)}
+          
+        >
+                { 
+
+                this.state.openInfoWindowMarkerId===i&&
+ 
+          <InfoWindow 
+          onCloseClick={() => this.handleToggleClose(i)
+          }
+
+          position={{
+            lat: restaurant.coordinates.latitude,
+            lng: restaurant.coordinates.longitude
           }}
         >
                  <Card style={{ width: '6rem' }}>
-                 <Card.Img variant="top"  src={selectedPark.image_url} style={{ width: '50%' }} />               
-
-            {/* <h2>{selectedPark.name}</h2> */}
-            <Button variant="outline-success"rel="noreferrer noopener" target="_blank" href={selectedPark.url} >{selectedPark.name}</Button>
-
-            {/* <p>{selectedPark.url}</p> */}
+                 <Card.Img variant="top"  src={restaurant.image_url} style={{ width: '50%' }} />               
+                <p>rating: {restaurant.rating} <Card.Img variant="top"  src="http://pluspng.com/img-png/yellow-stars-png-hd-golden-star-rotate-3d-render-footage-in-4k-chroma-key-green-screen-852.jpg" style={{ width: '25%' }} /></p>
+            <Button variant="outline-success"rel="noreferrer noopener" target="_blank" href={restaurant.url} >{restaurant.name}</Button>
             </Card>
         </InfoWindow>
-      )}
-    </GoogleMap>
-
-
-    
-    </div>
-  )
+         }
+        </Marker>
+      ))}
+                </this.CMap>
+            </Fragment>
+            </div>
+        );
+    }
 }
 
-const MapWrapper= withScriptjs(withGoogleMap(Map))
-
-
-function App() {
-  return (
-    <div style={{width:"30vw", height:"40vh"}}>
-
-{/* https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&rankby=distance&type=food&key=YOUR_API_KEY */}
-      
-       <MapWrapper googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyBliDy-LD-7I7MHWZtGY_sZEBZ9EHjlWt8`}
-       loadingElement={<div style={{height:"100%"}}/>}
-       containerElement={<div style={{height:"100%"}}/>}
-       mapElement={<div style={{height:"100%"}}/>}
-
-       
-       
-       />
-       
-       
-       
-
-    </div>
-  );
-}
-
-export default App;
+export default Map;
