@@ -34,6 +34,7 @@ function mainFunction(callback) {
          })
          .catch(err => {
            console.log(err);
+           alert("please enter a city name or zip code")
          })
 
           }
@@ -48,6 +49,7 @@ class Map extends Component{
 
 
   componentDidMount() {
+    // once the component mounts, i make the call to the api
     mainFunction((yelp)=>{console.log(yelp.businesses[0].coordinates);
     this.setState({
       stores: yelp.businesses,
