@@ -22,7 +22,7 @@ import  Map from './components/YelpGoolgeApi/YelpGoogleMap'
 function App() {
   return (
     <React.Fragment>
-      <HamburgerMenu></HamburgerMenu>
+      {/* <HamburgerMenu></HamburgerMenu> */}
       {/* defining routes with switch "component" */}
       <Switch>
         {/* using exact path makes it so that the switch statement works properly. if not used, all routes that include "/" for example "/productdetails" will go to "/" because it includes "/" */}

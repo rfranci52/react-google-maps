@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import {Card,Dropdown} from 'react-bootstrap/';
 import {
     withScriptjs,
     withGoogleMap,
@@ -10,46 +10,50 @@ import {
 import "./index.css"
 import {ButtonContainer} from "../../ButtonContainer"
 import 'bootstrap/dist/css/bootstrap.min.css' 
+import { MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from "mdbreact";
+
 
 
 
 
 // sets default markers by passing yelp_params into the yelp api query string
-
+//var storetypes default is healthmarkets; when a user chooses a different storetype from the dropdown menu, state is updated to that value
+var storetype="healthmarkets"
 function mainFunction(yelp_params, callback) {
      
-        const axios =require ("axios")
-       var str= axios
-         .get(
-           `${"https://cors-anywhere.herokuapp.com/"}https://api.yelp.com/v3/businesses/search?&location=`+yelp_params,
-           {
-             headers: {
-               Authorization: `Bearer ` + process.env.REACT_APP_YELP_KEY
-             }
-             ,
-             params: {
-               categories: "healthmarkets",
-             }
-           }
-         )
-         .then( res => {
-            callback(res.data)
-            return (res.data.businesses[0].id)
-            
-         })
-         .catch(err => {
-           console.log(err);
-        //    alert("please enter a city name or zip code")
-         })
+  const axios =require ("axios")
+ var str= axios
+   .get(
+     `${"https://cors-anywhere.herokuapp.com/"}https://api.yelp.com/v3/businesses/search?&location=`+yelp_params,
+     {
+       headers: {
+         Authorization: `Bearer ` + process.env.REACT_APP_YELP_KEY
+       }
+       ,
+       params: {
+         categories: "healthmarkets",
+       }
+     }
+   )
+   .then( res => {
+      callback(res.data)
+      return (res.data.businesses[0].id)
+      
+   })
+   .catch(err => {
+     console.log(err);
+  //    alert("please enter a city name or zip code")
+   })
 
-          }
+    }
          
 class Map extends Component{
  
   state = {
     stores:[],
-    title: 'Whole Foods',
-    openInfoWindowMarkerId: '',
+    title: 'bronx',
+    openInfoWindowMarkerId: 1,
+    value:"healthmarkets"
   };
 
 
@@ -60,17 +64,27 @@ class Map extends Component{
       stores: yelp.businesses,
       title: this.state.yelp_params
     });
-  
-  
+
   })
+
+  }
+
+
+  onClickHandler = event => {
+    const value = event.target.innerHTML;
+    storetype=value
+    this.setState({ value:value })
+
   }
 
   handleInputChange = event => {
     event.cancelable=false;
     event.persist()
     event.preventDefault();
-    console.log(event.target.value)
-    console.log(this.state);
+    // console.log(event.target.value)
+    // this.state.stores[0].image_url
+
+
     this.setState({
         title: event.target.value,
     });
@@ -89,13 +103,17 @@ class Map extends Component{
 
     mainFunction(this.state.title, (yelp)=>{
         // Updating the input's state
-        console.log(yelp);
+        // console.log(yelp.businesses);
+
         this.setState({
             stores: yelp.businesses,
         });
-        
+        // console.log(yelp.businesses)
+
         })
   };
+
+  
 
     static defaultProps = {
         googleMapURL: "https://maps.googleapis.com/maps/api/js?key="+ process.env.REACT_APP_GOOGLE_KEY+ "&v=3.exp&libraries=geometry,drawing,places",
@@ -104,7 +122,7 @@ class Map extends Component{
     constructor(props) {
         super(props);
         mainFunction((yelp)=>{
-          console.log(yelp.businesses)
+          // console.log(yelp.businesses)
 
         this.state = {
           stores: yelp.businesses,
@@ -131,6 +149,7 @@ class Map extends Component{
         <GoogleMap
           defaultZoom={10}
           defaultCenter={{ lat:40.7799404643263, lng: -73.980282552649}}
+          defaultOptions={{disableDefaultUI: true}}
         >
             {props.children}
              
@@ -138,34 +157,64 @@ class Map extends Component{
       ));
 
     render() {
+      console.log(this.state)
+      this.state.stores.map((restaurant,i) => "do")
         return (
 
 
           <div className="py-5">
-    <div className="container"> 
-    {/* <Title name="our" title="products"/>   <div className="row"> */}
+    <div className="container d-flex justify-content-center"> 
 
  
           
 
-<div>
+<div  className="d-flex justify-content-center">
+
 <form >
-  <label>
+  <label >
+    <br/>
     Enter a Location:
     <input type="text" name="name"   
-        // line below takes away my ability to change the input
-    //  value={this.state.title}           
+                 
   onChange={this.handleInputChange}
 />
-{/* <button onClick={this.handleFormSubmit} >Submit</button> */}
-<ButtonContainer  onClick={this.handleFormSubmit}>
-                   <span className="mr-2"><i className="fas fa-carrot">Search</i></span>
-               </ButtonContainer>
 
   </label>
+  
+
+
+<div className="container">
+  <div className="row mt-5">
+    <div className="col-sm-12">
+
+<MDBDropdown>
+          <MDBDropdownToggle caret color="primary">
+            Choose a Store Type
+      </MDBDropdownToggle>
+          <MDBDropdownMenu basic>
+            <MDBDropdownItem onClick={this.onClickHandler}>healthtrainers</MDBDropdownItem>
+            <MDBDropdownItem onClick={this.onClickHandler}>cardioclasses</MDBDropdownItem>
+            <MDBDropdownItem onClick={this.onClickHandler}>yoga</MDBDropdownItem>
+            <MDBDropdownItem onClick={this.onClickHandler}>farmersmarket</MDBDropdownItem>
+            <MDBDropdownItem onClick={this.onClickHandler}>markets</MDBDropdownItem>            <MDBDropdownItem onClick={this.onClickHandler}>organic_stores</MDBDropdownItem>
+
+
+
+            
+          </MDBDropdownMenu>
+        </MDBDropdown>
+        <ButtonContainer  onClick={this.handleFormSubmit}>
+        <span className="mr-2"><i className="fas fa-carrot">Search</i></span>
+      </ButtonContainer>
+    </div>
+  </div>
+</div>
 </form>
+{/* </Card>  */}
+
           
             <Fragment>
+              <div>
                 <this.CMap
                   googleMapURL={this.props.googleMapURL}
                     
@@ -175,7 +224,7 @@ class Map extends Component{
                     center= {{ lat: 25.03, lng: 121.6 }} 
                 >
 
-                   {this.state.stores.map((restaurant,i) => (
+                   {this.state.stores.slice(0, 5).map((restaurant,i) => (
         <Marker
                     
           key={i}
@@ -210,9 +259,14 @@ class Map extends Component{
         </Marker>
       ))}
                 </this.CMap>
+                </div>
             </Fragment>
             </div>
-            </div>
+        
+    </div>
+
+
+
 </div>
 
             
