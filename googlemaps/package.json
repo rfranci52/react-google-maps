@@ -16,7 +16,7 @@
     "react-google-maps-loader": "^4.2.5",
     "react-google-places-suggest": "^3.8.0",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "yelp-fusion": "^3.0.0"
   },
   "scripts": {
